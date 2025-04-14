@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import { Suspense } from 'react'
 import { IoHome } from 'react-icons/io5'
 import { Catalog } from './catalog/Catalog'
 import styles from './header.module.scss'
@@ -16,7 +17,9 @@ export function Header() {
 			</Link>
 
 			<Catalog />
-			<Search />
+			<Suspense>
+				<Search />
+			</Suspense>
 			<Menu />
 		</header>
 	)
