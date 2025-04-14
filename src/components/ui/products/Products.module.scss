@@ -1,0 +1,33 @@
+.wrapper > {
+	.row {
+		@apply mt-3 flex flex-wrap gap-3.5 gap-y-5;
+
+		> .item {
+			@apply w-[220px]  p-2 flex flex-col gap-1 cursor-pointer;
+
+			> .image {
+				@apply w-full h-[250px] object-cover rounded-2xl object-center;
+			}
+
+			> .name {
+				@apply text-base;
+			}
+
+			> .price_wrapper {
+				@apply flex items-end;
+
+				> .price {
+					@apply text-xl font-medium text-green mr-2;
+				}
+
+				> .old_price {
+					@apply text-sm text-gray line-through;
+				}
+			}
+		}
+	}
+
+	h1 {
+		@apply text-xl font-medium;
+	}
+}

@@ -1,0 +1,88 @@
+.fundo {
+	animation: scales 10s alternate infinite; /* Увеличили время */
+	transform-origin: center;
+}
+
+.paoBaixo {
+	animation: rotatepao 10s cubic-bezier(0.1, 0.49, 0.41, 0.97) infinite;
+	transform-origin: center;
+}
+
+.paoCima {
+	animation: rotatepao 10s cubic-bezier(0.1, 0.49, 0.41, 0.97) infinite;
+	transform-origin: center;
+}
+
+.leftSparks {
+	animation: left-sparks 10s alternate infinite; /* Увеличили время */
+	transform-origin: 150px 156px;
+}
+
+.rightSparks {
+	animation: left-sparks 10s alternate infinite; /* Увеличили время */
+	transform-origin: 310px 150px;
+}
+
+.olhos {
+	animation: olhos 3s alternate infinite; /* Можно оставить или тоже увеличить */
+	transform-origin: center;
+}
+
+.path {
+	stroke-dasharray: 300;
+	stroke-dashoffset: 300;
+	animation: dash 10s alternate infinite; /* Увеличили время */
+}
+
+@keyframes scales {
+	0% {
+		transform: scale(0.98);
+	}
+	50% {
+		transform: scale(1);
+	}
+	100% {
+		transform: scale(0.98);
+	}
+}
+
+@keyframes rotatepao {
+	0%,
+	100% {
+		transform: rotate(0deg);
+	}
+	50% {
+		transform: rotate(-20deg);
+	}
+}
+
+@keyframes left-sparks {
+	0%,
+	100% {
+		opacity: 0;
+	}
+	50% {
+		opacity: 1;
+	}
+}
+
+@keyframes dash {
+	0%,
+	100% {
+		fill: #cccccc;
+		stroke-dashoffset: 0;
+	}
+	50% {
+		fill: transparent;
+		stroke-dashoffset: -200;
+	}
+}
+
+.notFound {
+	height: calc(100vh - 140px);
+	margin: 25px auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}

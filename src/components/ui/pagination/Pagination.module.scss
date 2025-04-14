@@ -1,0 +1,20 @@
+.pagination {
+	@apply flex items-center justify-center text-lg text-black font-light;
+
+	> .active {
+		@apply text-black font-medium;
+	}
+
+	> button {
+		@apply mx-2;
+	}
+
+	> .next,
+	> .prev {
+		@apply bg-gray text-2xl p-1 rounded-full text-white;
+
+		&:disabled {
+			@apply opacity-50;
+		}
+	}
+}

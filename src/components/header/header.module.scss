@@ -1,0 +1,84 @@
+.header {
+	@apply flex py-3 justify-between;
+
+	> .catalog {
+		@apply relative bg-white;
+
+		> .catalog_button {
+			@apply bg-blue  flex gap-2.5 items-center py-2.5 px-5 rounded-[10px];
+
+			> span {
+				@apply text-white font-medium text-base;
+			}
+		}
+
+		> .catalog_list {
+			@apply flex flex-col rounded-[10px] mt-3 bg-white absolute;
+
+			> .catalog_item {
+				@apply px-6 py-3 text-black;
+
+				&:hover {
+					@apply text-blue;
+				}
+			}
+		}
+	}
+
+	> .search {
+		@apply bg-blue mx-5 w-[60%] rounded-[10px] p-0.5 relative z-20;
+
+		> form {
+			@apply flex w-full items-center;
+
+			.input_wrapper {
+				@apply bg-white w-full h-10 rounded-lg flex px-4;
+
+				> input {
+					@apply text-black text-base placeholder:text-gray w-full bg-transparent outline-none;
+				}
+			}
+
+			.button_wrapper {
+				@apply flex justify-center items-center text-white text-2xl px-5;
+			}
+		}
+
+		> .list {
+			@apply absolute rounded-[10px] w-full bg-white mt-2;
+
+			> a {
+				@apply flex items-center py-2 px-4 text-base relative;
+
+				> .image {
+					@apply h-12 rounded-md w-auto mr-4;
+				}
+			}
+		}
+	}
+
+	> .menu {
+		@apply flex items-center gap-10;
+
+		> .item {
+			@apply flex flex-col justify-center items-center text-gray;
+			transition: color 0.1s ease-in-out;
+
+			&:first-child {
+				@apply text-black;
+			}
+
+			&:hover {
+				@apply text-blue;
+			}
+
+			> svg {
+				@apply text-2xl;
+			}
+
+			> span {
+				@apply text-xs;
+			}
+		}
+	}
+}

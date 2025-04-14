@@ -1,0 +1,36 @@
+.review {
+	@apply bg-white p-5 rounded-2xl;
+
+	> .main {
+		@apply flex justify-between items-center;
+
+		> .author {
+			@apply flex items-center;
+
+			> .avatar {
+				@apply w-10 h-10 rounded-full relative overflow-hidden mr-4;
+				> img {
+					@apply block object-center object-cover;
+				}
+			}
+
+			> div {
+				> .name {
+					@apply font-medium text-lg;
+				}
+
+				> .date {
+					@apply text-black;
+				}
+			}
+		}
+
+		> .score {
+			@apply text-2xl;
+		}
+	}
+
+	> .comment {
+		@apply mt-2 text-lg whitespace-pre-wrap;
+	}
+}

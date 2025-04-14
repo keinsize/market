@@ -1,0 +1,229 @@
+{
+	"categories": [
+		{
+			"id": "cat1",
+			"name": "Электроника",
+			"slug": "elektronika"
+		},
+		{
+			"id": "cat2",
+			"name": "Одежда",
+			"slug": "odezhda"
+		},
+		{
+			"id": "cat3",
+			"name": "Книги",
+			"slug": "knigi"
+		}
+	],
+	"shops": [
+		{
+			"id": "shop1",
+			"createdAt": "2023-01-01T10:00:00Z",
+			"name": "Tech World",
+			"slug": "tech-world",
+			"profit": 50000,
+			"sales": 250
+		},
+		{
+			"id": "shop2",
+			"createdAt": "2023-02-15T12:30:00Z",
+			"name": "Fashion Hub",
+			"slug": "fashion-hub",
+			"profit": 30000,
+			"sales": 180
+		}
+	],
+	"products": [
+		{
+			"id": "prod1",
+			"createdAt": "2023-03-01T09:00:00Z",
+			"name": "Смартфон Galaxy S23",
+			"description": "Мощный смартфон с камерой высокого разрешения.",
+			"images": [
+				"/products/13312.webp",
+				"/products/13313.webp",
+				"/products/13314.webp"
+			],
+			"price": 74999,
+			"oldPrice": 84999,
+			"countOpened": 120,
+			"categoryId": "cat1",
+			"shopId": "shop1"
+		},
+		{
+			"id": "prod2",
+			"createdAt": "2023-03-02T11:00:00Z",
+			"name": "Наушники AirPods Pro",
+			"description": "Беспроводные наушники с шумоподавлением.",
+			"images": [
+				"/products/6023804564.webp",
+				"/products/6023804565.webp",
+				"/products/6023804566.webp"
+			],
+			"price": 22999,
+			"oldPrice": 26999,
+			"countOpened": 85,
+			"categoryId": "cat1",
+			"shopId": "shop1"
+		},
+		{
+			"id": "prod3",
+			"createdAt": "2023-03-03T13:00:00Z",
+			"name": "Футболка Oversized",
+			"description": "Удобная футболка свободного кроя.",
+			"images": ["/products/7232278153.webp", "/products/7232278162.webp"],
+			"price": 2799,
+			"oldPrice": 3499,
+			"countOpened": 150,
+			"categoryId": "cat2",
+			"shopId": "shop2"
+		},
+		{
+			"id": "prod4",
+			"createdAt": "2023-03-04T15:00:00Z",
+			"name": "Джинсы Slim Fit",
+			"description": "Классические джинсы с узким кроем.",
+			"images": ["/products/7370133808.webp", "/products/7370133544.webp"],
+			"price": 5499,
+			"oldPrice": 7499,
+			"countOpened": 110,
+			"categoryId": "cat2",
+			"shopId": "shop2"
+		},
+		{
+			"id": "prod5",
+			"createdAt": "2023-03-05T17:00:00Z",
+			"name": "Роман '1984'",
+			"description": "Классический роман Джорджа Оруэлла.",
+			"images": ["/products/6896887201.webp", "/products/6612241112.webp"],
+			"price": 999,
+			"oldPrice": 1199,
+			"countOpened": 70,
+			"categoryId": "cat3",
+			"shopId": "shop1"
+		},
+		{
+			"id": "prod6",
+			"createdAt": "2023-03-06T19:00:00Z",
+			"name": "Ноутбук MacBook Pro",
+			"description": "Профессиональный ноутбук для работы и творчества.",
+			"images": ["/products/7296048982.webp", "/products/7296048986.webp"],
+			"price": 119999,
+			"oldPrice": 139999,
+			"countOpened": 95,
+			"categoryId": "cat1",
+			"shopId": "shop1"
+		},
+		{
+			"id": "prod8",
+			"createdAt": "2023-03-08T23:00:00Z",
+			"name": "Куртка кожаная",
+			"description": "Стильная кожаная куртка классического дизайна.",
+			"images": ["/products/7309840247.webp", "/products/7309840557.webp"],
+			"price": 18999,
+			"oldPrice": 23999,
+			"countOpened": 100,
+			"categoryId": "cat2",
+			"shopId": "shop2"
+		},
+		{
+			"id": "prod9",
+			"createdAt": "2023-03-09T01:00:00Z",
+			"name": "Фантастическая книга 'Дюна'",
+			"description": "Эпическая научная фантастика Фрэнка Герберта.",
+			"images": ["/products/7182307231.webp", "/products/6831038753.webp"],
+			"price": 1399,
+			"oldPrice": 1899,
+			"countOpened": 65,
+			"categoryId": "cat3",
+			"shopId": "shop1"
+		},
+		{
+			"id": "prod10",
+			"createdAt": "2023-03-10T03:00:00Z",
+			"name": "Умные часы SmartWatch X",
+			"description": "Современные умные часы с функцией мониторинга здоровья.",
+			"images": ["/products/7322925992.webp", "/products/7322926060.webp"],
+			"price": 18999,
+			"oldPrice": 23999,
+			"countOpened": 105,
+			"categoryId": "cat1",
+			"shopId": "shop1"
+		},
+		{
+			"id": "prod11",
+			"createdAt": "2023-03-11T05:00:00Z",
+			"name": "Кроссовки спортивные",
+			"description": "Комфортные кроссовки для бега и тренировок.",
+			"images": ["/products/7242372591.webp", "/products/6659983669.webp"],
+			"price": 8499,
+			"oldPrice": 10499,
+			"countOpened": 125,
+			"categoryId": "cat2",
+			"shopId": "shop2"
+		}
+	],
+	"reviews": [
+		{
+			"id": "rev1",
+			"createdAt": "2023-03-13T10:00:00Z",
+			"score": 5,
+			"comment": "Отличный смартфон! Камера просто супер!",
+			"productId": "prod1",
+			"owner": {
+				"id": "user1",
+				"name": "Иван Иванов",
+				"avatar": "/users/avatars/default.webp"
+			}
+		},
+		{
+			"id": "rev2",
+			"createdAt": "2023-03-14T12:00:00Z",
+			"score": 4,
+			"comment": "Хорошие наушники, но заряд держится не очень долго.",
+			"productId": "prod2",
+			"owner": {
+				"id": "user2",
+				"name": "Мария Петрова",
+				"avatar": "/users/avatars/default.webp"
+			}
+		},
+		{
+			"id": "rev3",
+			"createdAt": "2023-03-15T14:00:00Z",
+			"score": 5,
+			"comment": "Прекрасная футболка, размер подошел идеально!",
+			"productId": "prod3",
+			"owner": {
+				"id": "user3",
+				"name": "Алексей Сидоров",
+				"avatar": "/users/avatars/default.webp"
+			}
+		},
+		{
+			"id": "rev4",
+			"createdAt": "2023-03-16T16:00:00Z",
+			"score": 4,
+			"comment": "Книга очень интересная, рекомендую!",
+			"productId": "prod5",
+			"owner": {
+				"id": "user4",
+				"name": "Екатерина Кузнецова",
+				"avatar": "/users/avatars/default.webp"
+			}
+		},
+		{
+			"id": "rev5",
+			"createdAt": "2023-03-17T18:00:00Z",
+			"score": 5,
+			"comment": "Ноутбук работает отлично, скорость поражает!",
+			"productId": "prod6",
+			"owner": {
+				"id": "user5",
+				"name": "Дмитрий Николаев",
+				"avatar": "/users/avatars/default.webp"
+			}
+		}
+	]
+}
