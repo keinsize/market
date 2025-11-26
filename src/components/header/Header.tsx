@@ -11,7 +11,7 @@ export function Header() {
 		<header className={styles.header}>
 			<Link
 				href={'/'}
-				className='h-full text-[28px] bg-blue text-white p-2 rounded-[10px]'
+				className='h-full text-[28px] bg-blue text-white p-2 mr-2 rounded-[10px]'
 			>
 				<IoHome />
 			</Link>
