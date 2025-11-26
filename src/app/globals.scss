@@ -3,5 +3,5 @@
 @tailwind utilities;
 
 body {
-	@apply max-w-[1440px] mx-auto px-6;
+	@apply max-w-[1440px] min-w-[775px] mx-auto px-6;
 }
